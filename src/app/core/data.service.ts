@@ -11,7 +11,7 @@ export class DataService{
 
     baseUrl: string = "assets/";
 
-    constructor( private http: HttpClient){}
+    constructor( private http: HttpClient ){}
 
     getCustomers() : Observable<ICostumer[]>{
         return this.http.get<ICostumer[]>(this.baseUrl + 'customers.json')

@@ -7,7 +7,7 @@ import { SorterService } from "./sorter.service";
 //import in AppModule as imports
 @NgModule({
     providers: [ DataService, SorterService ],
-    imports: [  ]
+    imports: [ HttpClientModule ]
 })
 
 export class CoreModule{
