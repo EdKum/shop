@@ -1,4 +1,4 @@
-export interface ICostumer{
+export interface ICustomer {
     id: number;
     name: string;
     city: string;
@@ -11,8 +11,8 @@ export interface IOrder {
     orderItems: IOrderItem[];
 }
 
-export interface IOrderItem{
+export interface IOrderItem {
     id: number;
-    productname: string;
+    productName: string;
     itemCost: number;
 }

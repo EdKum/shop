@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-//@Component is a decorator
-@Component({
+
+@Component({ 
   selector: 'app-root',
   template: `
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   `
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
+  constructor() { }
 
-  constructor(){
+  ngOnInit() {
 
   }
   
-  ngOnInit(){
-   
-  }
 }
