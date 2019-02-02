@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomersModule } from './customers/customers.module';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from "./core/core.module";
 
 @NgModule({
   //importierte HTML Tags.
@@ -14,9 +15,10 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    CoreModule,
     CustomersModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   //show the first Component in the UI
